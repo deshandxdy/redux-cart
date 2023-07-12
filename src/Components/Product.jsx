@@ -5,7 +5,7 @@ import { add, remove } from '../Store/cartSlice';
 
 
 function Product(props) {
-    const { id, image, title, price } = props.product
+    const { image, title, price } = props.product
     const action = props.action
     const dispatch = useDispatch()
 
@@ -20,7 +20,7 @@ function Product(props) {
     }
 
     const actionButton = () => {
-        if(action == 'add') {
+        if(action === 'add') {
             return (
                 <Button variant="primary" onClick={() => addToCart(props.product)}>Add to Cart</Button>
             )
