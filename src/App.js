@@ -1,10 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Products from './Components/Products';
+import { RouterProvider } from 'react-router-dom'
+import { router } from './routes';
 
 function App() {
+    
     return (
-        <div className="App container">
-            <Products />
+        <div className="App">
+            <RouterProvider router={router} />
         </div>
     );
 }
