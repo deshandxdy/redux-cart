@@ -19,7 +19,10 @@ const Products = () => {
     //get data from redux thunk function
 
     useEffect(() => {
-        dispatch(getProdcutsFromApi())
+        function fetchProducts() {
+            dispatch(getProdcutsFromApi())
+        }
+        fetchProducts()
     }, [])
 
     if (status === LOADING) {
