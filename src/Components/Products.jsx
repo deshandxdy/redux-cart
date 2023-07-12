@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Row from 'react-bootstrap/Row';
 import Alert from 'react-bootstrap/Alert';
 import Product from "./Product";
