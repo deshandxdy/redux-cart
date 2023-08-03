@@ -39,7 +39,7 @@ const Products = () => {
         <Product key={product.id} product={product} action='add' />
     ))
     return <div>
-        <h2 className="text-center">Our Product Listings</h2><br/>
+        <h2 className="text-center">Our Product Listings ABC</h2><br/>
 
         <Row>{cards}</Row>
     </div>;
